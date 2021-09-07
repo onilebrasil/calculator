@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/calculadora.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="fundo">
+   <h1>Calculator</h1>
+   <div class="calculadora">
+     <h1>Calcule</h1>  
+     <p id="resultado"></p> 
+     <table>
+      <tr>
+       <td><Button class="botao" onclick="clean()">C</Button></td>   
+       <td><Button class="botao" onclick="back()"><</Button></td>   
+       <td><Button class="botao" onclick="insert('/')">/</Button></td>   
+       <td><Button class="botao" onclick="insert('*')">X</Button></td>   
+      </tr>   
+      <tr>
+       <td><Button class="botao" onclick="insert('7')">7</Button></td>   
+       <td><Button class="botao" onclick="insert('8')">8</Button></td>   
+       <td><Button class="botao" onclick="insert('9')">9</Button></td>   
+       <td><Button class="botao" onclick="insert('-')">-</Button></td>   
+      </tr>
+      <tr>   
+       <td><Button class="botao" onclick="insert('4')">4</Button></td>   
+       <td><Button class="botao" onclick="insert('5')">5</Button></td>   
+       <td><Button class="botao" onclick="insert('6')">6</Button></td>   
+       <td><Button class="botao" onclick="insert('+')">+</Button></td>   
+      </tr>
+      <tr>   
+       <td><Button class="botao" onclick="insert('1')">1</Button></td>   
+       <td><Button class="botao" onclick="insert('2')">2</Button></td>   
+       <td><Button class="botao" onclick="insert('3')">3</Button></td>   
+       <td><button class="botao" onclick="calcular()">=</button></td>
+      </tr>
+      <tr>   
+       <td><Button class="botao" onclick="insert('0')">0</Button></td>   
+       <td><Button class="botao" onclick="insert('.')">.</Button><td>      
+      </tr>
+     </table>
+   </div>   
+  </div>  
+ <script src="main.js"></script> 
+</body>
+</html>
